@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Product Landing Page | </title>
+        <style>
+            body {
+                font-size: 1.25em;
+            }
+            #header {
+                position: sticky;
+                top: 0;
+                background-color: white;
+                overflow: auto;
+            }
+            #logo {
+                display: block;
+                float: left;
+            }
+            #header img {
+                max-height: 100%;
+                display: block;
+                height: auto;
+                margin: auto;
+            }
+            #nav-bar {
+                display: block;
+                float: right;
+                margin: auto;
+            }
+            #nav-bar ul {
+                float: right;
+            }
+            #nav-bar li {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1.25em;
+                margin: auto 1em auto;
+                background-color: red;
+                border-radius: 10px;
+            }
+            #nav-bar li a:link {
+                text-decoration: none;
+            }
+            #nav-bar li a {
+                color: white;
+                padding: 0.5em;
+            }
+            #nav-bar li a:hover {
+                text-decoration: none;
+                background-color: white;
+                color: red;
+            }
+            #nav-bar li a:visited{
+                text-decoration: none;
+            }
+            #nav-bar li a:active {
+                text-decoration: none;
+            }
+            tr td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            tr td:nth-child(1) {
+                width: 30%;
+                text-align: right;
+                vertical-align: text-top;
+                border-top: 1px solid;
+                border-right: 1px solid;
+                padding-right: 15px;
+            } 
+            tr td:nth-child(2) {
+                vertical-align: text-top;
+                border-top: 1px solid;
+                padding-left: 15px;
+            } 
+            #show {
+                display: flex;
+                width: 100%;
+                background-color: rgb(37, 35, 35);
+                color: white;
+                margin-top: .25em;
+            }
+            #showtext {
+                width: 50%;
+                margin: 1em 2em;
+            }
+            #showvideo {
+                width: 50%;
+            }
+            #video {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+            section {
+                width: 60%;
+                margin: auto;
+            }
+            #form {
+                margin: auto;
+                width: 70%;
+            }
+            #email {
+                width: 350px;
+                height: 20px;
+                border-radius: 20px;
+                border: 1.5px solid darkgrey;
+            }
+            #submit {
+                background-color: black;
+                color: whitesmoke;
+                font-weight: 900;
+                font-size: large;
+                border: 2px solid;
+                border-radius: 5px;
+            }
+            main {
+                margin-bottom: 2em;
+            }
+
+            @media (max-width: 900px) {
+                #nav-bar {
+                    float: left;
+                }
+                #nav-bar ul {
+                    float: left;
+                }
+                #nav-bar li {
+                    font-size: 1em;
+                }
+                #show {
+                    flex-wrap: wrap;
+                }
+                #showtext {
+                    width: 100%;
+                }
+                #showvideo {
+                    width: 100%;
+                }
+                section {
+                    width: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <div id="logo">
+                <img src="https://static.lenovo.com/fea/images/lenovo-logo-red.png" alt="" id="header-img">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#feats" class="nav-link">Features</a></li>
+                    <li><a href="#specs" class="nav-link">Tech Specs</a></li>
+                    <li><a href="#details" class="nav-link">Get more details</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="show">
+            <div id="showtext">
+                <h1>ThinkPad 25</h1>
+                <h2>Go retro with our anniversary edition</h2>
+                <p>To commemorate 25 years of ThinkPad, we're paying homage to some of the original aesthetics of that first model, while maintaining the powerful performance and mobile agility of today's configurations. So, as you use this special anniversary edition to accomplish your next big thing, consider how far we've traveled together along the road to different.</p>
+            </div>
+            <div id="showvideo">
+                <video id="video" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+                </video>
+            </div>
+        </section>
+        <main>
+            <section id="feats">
+                <hr>
+                <h1>Features</h1>
+                <h2>What in the tech was 1992?</h2>
+                <p>The tech landscape was a different place, then for sure. The web celebrated its first birthday. AOL dominated as an ISP. There was no Google. No Yahoo. Mobile phones, at least the lightweight smartphones we currently enjoy, had yet to be invented. Bluetooth and wireless were yet to even be dreamed of. Social media didn’t exist. Floppy disks were on every techie’s wish list. PCs cost several thousand dollars, and the functionality to multitask programs, run background processes, and automatically manage memory didn't exist. Different, indeed.</p>
+                <h2>More than 100 million sold </h2>
+                <p>The ThinkPad has come a long way since 1992. It's been to the top of Mount Everest and to the depths of the ocean. Scientists used the ThinkPad to study biodiversity in the canopies of rain forests. It traveled the entire length of the Blue Nile and the Nile River, on the first expedition to such. NASA enthusiastically embraced the ThinkPad, on both the International Space Station and the Mir space station. And thanks to the Butterfly design of an early model, ThinkPad is even part of the permanent collection at the Museum of Modern Art in New York City. It's no small wonder, then, that we’ve sold more than 100 million of these amazing devices, and ThinkPad is the world’s #1 business laptop of all time!*</p>
+                <h2>The art of convenience</h2>
+                <p>In the 5th century, Japan's farmers and hunters packed lunches in boxes, which were derived from a farmer's seed box. The term bento was coined from a Southern Song Dynasty slang term for convenient. Bento spread throughout Asia, and the box itself evolved into a work of art. Typically made of lacquered wood or woven baskets, the bento box became symbolic of luxury around 1912. Perhaps it’s no surprise, then, that the original 1992 ThinkPad was inspired by the beautifully crafted Japanese bento box.</p>
+                <h2>Best of both worlds</h2>
+                <p>The ThinkPad 25 retains several key aesthetics from the original model, such as the 7-row classic keyboard (now with backlighting) and the blue Enter key with blue accents on the sub-keys. A special edition ThinkPad 25 logo completes the retro look, along with special packaging. These throwbacks to yesteryear are fueled by some of the best contemporary technology specs like 8th generation Intel® Core™ i7 processor, Windows 10 Pro, and NVIDIA® GeForce® graphics. Dolby® Audio™ Premium boosts the sound quality, while the 14” touchscreen display features FHD—so you can enjoy all activities, whether for work or play. What’s more, you can stay unplugged for up to 18 hours. </p>
+            </section>
+            <section id="specs">
+                <hr>
+                <h1>Tech Specs</h1>
+                <table class="techSpecs-table">
+                    <tbody>
+                        <tr>
+                            <td>Processor</td>
+                            <td>7<sup>th</sup> Gen Intel<sup>®</sup> Core™ i7-7500u
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Operating System</td>
+                            <td>
+                                <div>Windows 10 Pro</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Graphics</td>
+                            <td>NVIDIA® GeForce® 940MX-2 GB GDDR5&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Webcam / Microphone</td>
+                            <td>
+                                <div>720p HD webcam&nbsp;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Memory</td>
+                            <td>
+                                <div>16 GB DDR4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>
+                                <div>512 GB PCIe SSD</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td>
+                                <ul>
+                                    <li>Stereo speakers with Dolby® Audio™ Premium</li>
+                                    <li>Dual-array (noise-cancelling) microphones&nbsp;</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>
+                                <div>48 Whr up to 13.9 hours of battery life*</div>
+                                <div>* Based on testing with MobileMark 2014. Battery life varies significantly with settings, usage, &amp; other factors.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Display</td>
+                            <td>
+                                <div>14" FHD antiglare with touch (1920 x 1080)</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions (W x D x H)</td>
+                            <td>
+                                <ul>
+                                    <li>336.6 mm x 232.5 mm x 19.95 mm</li>
+                                    <li>13.25" x 9.15" x .79"</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>
+                                <div>3.48 lbs / 1.6 kg</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>WLAN</td>
+                            <td>
+                                <ul>
+                                    <li>WiFi 802.11 ac 2x2</li>
+                                    <li>Bluetooth<sup>®</sup>&nbsp;4.2</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>WWAN</td>
+                            <td>Sierra Wireless EM7455&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Security</td>
+                            <td>
+                                <ul>
+                                    <li>Match-on-Chip Touch fingerprint reader</li>
+                                    <li>Windows Hello with facial recognition&nbsp;</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ports</td>
+                            <td>
+                                <ul>
+                                    <li>3 x USB 3.0</li>
+                                    <li>USB-C with Intel Thunderbolt™ 3</li>
+                                    <li>3.5 mm Combo Audio Jack</li>
+                                    <li>HDMI™</li>
+                                    <li>RJ45 Gigabit LAN</li>
+                                    <li>Mechanical docking</li>
+                                    <li>4-in-1 Card Reader (SD, MMC,SDHC, SDXC)&nbsp;</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Commemorative Features</td>
+                            <td>
+                                <ul>
+                                    <li>7-row classic keyboard (now with backlighting)</li>
+                                    <li>Blue Enter key with blue accents on sub-keys</li>
+                                    <li>Special edition ThinkPad 25 logo</li>
+                                    <li>Special ThinkPad 25 packaging</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="details">
+                <hr>
+                <h1>Get more details</h1>
+                <p>If you would like more information, we offer you an e-book that will give you more details about our product. In addition, you will regularly receive a newsletter in your inbox.</p>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <label for="email">Email:</label>&nbsp;&nbsp;
+                    <input type="email" name="email" id="email" placeholder="    Type your email address">&nbsp;&nbsp;
+                    <input type="submit" id="submit" value="ENTER">
+                </form>
+            </section>            
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
